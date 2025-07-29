@@ -168,5 +168,3 @@ print("\nClassification Report:")
 print(classification_report(y_true, y_pred, target_names=class_names))
 
 
-
-"""Image classification to identify different types of plastics: HDPE, LDPA, PET, and PP."""
