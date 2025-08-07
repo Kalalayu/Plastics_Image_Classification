@@ -2,3 +2,4 @@ gradio
 scikit-learn
 numpy
 tensorflow-cpu
+matplotlib
