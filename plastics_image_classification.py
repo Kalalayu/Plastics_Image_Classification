@@ -16,9 +16,10 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.metrics import confusion_matrix, classification_report
 
-uploaded = files.upload()
+zip_path = 'Dataset_plastics_mhadlekar_UN-20250720T182641Z-1-001.zip'  # Local or relative path
+if not os.path.exists(zip_path):
+    raise FileNotFoundError(f"Zip file not found at {zip_path}")
 
-zip_path = '/content/Dataset_plastics_mhadlekar_UN-20250720T182641Z-1-001.zip'
 base_dir='/content/Dataset_plastics_mhadlekar_UN/Dataset_plastics_mhadlekar_UN'            # destination
 
 with zipfile.ZipFile(zip_path, 'r') as zip_ref:
